@@ -117,7 +117,7 @@ async def check_link(msg,rclone=False,is_zip=False, extract=False, prev_msg=None
                         torlog.exception("exception in torrent file")
 
                     await ul_task.set_inactive()
-                    await print_files(omess,rdict,dl_task.hash, path = dl_path, size=ul_size)
+                    await print_files(omess,rdict, path = path, size=ul_size)
                     torlog.info("here are the files uploaded {}".format(rdict))
                     await QBittorrentWrap.delete_this(dl_task.hash)
                 else:
