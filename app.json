@@ -5,6 +5,7 @@
     "telegram","bot","torrent","leech"
   ],
   "repository": "https://github.com/reaitten/tgtk",
+  "stack": "container",
   "success_url": "https://github.com/reaitten/tgtk",
   "website": "https://github.com/reaitten/tgtk",
   "env": {
