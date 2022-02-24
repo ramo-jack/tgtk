@@ -26,6 +26,7 @@ async def aria_start():
     aria2_daemon_start_cmd.append("--rpc-listen-all=true")
     aria2_daemon_start_cmd.append(f"--rpc-listen-port=8100")
     aria2_daemon_start_cmd.append("--rpc-max-request-size=1024M")
+    aria2_daemon_start_cmd.append("--check-certificate=false")
     aria2_daemon_start_cmd.append("--seed-ratio=0.0")
     aria2_daemon_start_cmd.append("--seed-time=1")
     aria2_daemon_start_cmd.append("--split=10")
